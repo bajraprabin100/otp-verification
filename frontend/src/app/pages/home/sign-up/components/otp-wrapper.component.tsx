@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
-import SignUpStepTwoComponent from "@/app/pages/home/sign-up/components/otp-component";
+import OtpComponent from "@/app/pages/home/sign-up/components/otp-component";
 
-export const SignUpWrapper = styled("div")(() => ({
+export const OtpWrapper = styled("div")(() => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -9,18 +9,18 @@ export const SignUpWrapper = styled("div")(() => ({
   width: "100%",
 }));
 
-export const SignUpContainer = styled("div")(() => ({
+export const OtpContainer = styled("div")(() => ({
   maxWidth: "421px",
   width: "421px",
   padding: "20px",
 }));
-function SignUpWrapperComponent() { 
+function OtpWrapperComponent() {
   return (
-    <SignUpWrapper>
-      <SignUpContainer>
-        <SignUpStepTwoComponent />
-      </SignUpContainer>
-    </SignUpWrapper>
+    <OtpWrapper>
+      <OtpContainer>
+        <OtpComponent />
+      </OtpContainer>
+    </OtpWrapper>
   );
 }
-export default SignUpWrapperComponent;
+export default OtpWrapperComponent;

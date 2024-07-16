@@ -1,5 +1,10 @@
 export const VALIDATION_MESSAGE = {
     basics: {
+        otp:{
+            length:'Each digit must be 6 digit number',
+            number:'OTP must be a number',
+            required:'Otp Validation is Required'
+        },
         password:{
             required:"Password is required",
             length:"At least 6 characters",

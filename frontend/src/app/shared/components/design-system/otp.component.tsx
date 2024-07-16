@@ -1,6 +1,6 @@
 import { MuiOtpInput } from 'mui-one-time-password-input'
 import {styled} from "@mui/material/styles";
-import {THEME_PALETTE} from "src/styles/theme/palette"
+import {THEME_PALETTE} from "@/styles/theme/palette"
 export const OtpInput= styled(MuiOtpInput)`
       .MuiOtpInput-TextField {
         input{
