@@ -1,0 +1,4 @@
+[install]
+#registry = "https://registry.npmjs.org"
+registry = "http://10.13.188.17:8081/repository/npm-public/"
+

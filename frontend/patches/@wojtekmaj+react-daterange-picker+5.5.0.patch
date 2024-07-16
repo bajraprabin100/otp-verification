@@ -1,0 +1,13 @@
+diff --git a/node_modules/@wojtekmaj/react-daterange-picker/src/DateRangePicker.tsx b/node_modules/@wojtekmaj/react-daterange-picker/src/DateRangePicker.tsx
+index 5903778..a98515b 100644
+--- a/node_modules/@wojtekmaj/react-daterange-picker/src/DateRangePicker.tsx
++++ b/node_modules/@wojtekmaj/react-daterange-picker/src/DateRangePicker.tsx
+@@ -64,7 +64,7 @@ type IconOrRenderFunction = Icon | React.ComponentType | React.ReactElement;
+ 
+ type CalendarProps = Omit<
+   React.ComponentPropsWithoutRef<typeof Calendar>,
+-  'className' | 'maxDetail' | 'onChange'
++  'className' | 'maxDetail' | 'onChange' | 'tileClassName'
+ >;
+ 
+ type EventProps = ReturnType<typeof makeEventProps>;

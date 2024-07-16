@@ -1,0 +1,26 @@
+diff --git a/node_modules/react-calendar/dist/Calendar.css b/node_modules/react-calendar/dist/Calendar.css
+index 82baa28..fe77996 100644
+--- a/node_modules/react-calendar/dist/Calendar.css
++++ b/node_modules/react-calendar/dist/Calendar.css
+@@ -82,7 +82,7 @@
+ }
+ 
+ .react-calendar__month-view__days__day--weekend {
+-  color: #d10000;
++  color: #404D61;
+ }
+ 
+ .react-calendar__month-view__days__day--neighboringMonth,
+diff --git a/node_modules/react-calendar/src/Calendar.css b/node_modules/react-calendar/src/Calendar.css
+index 82baa28..fe77996 100644
+--- a/node_modules/react-calendar/src/Calendar.css
++++ b/node_modules/react-calendar/src/Calendar.css
+@@ -82,7 +82,7 @@
+ }
+ 
+ .react-calendar__month-view__days__day--weekend {
+-  color: #d10000;
++  color: #404D61;
+ }
+ 
+ .react-calendar__month-view__days__day--neighboringMonth,
