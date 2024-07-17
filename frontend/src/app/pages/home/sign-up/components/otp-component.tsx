@@ -13,17 +13,6 @@ import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { otpValidation } from "@/app/pages/home/sign-up/components/validation";
 import { useNavigate } from "@tanstack/react-router";
 
-export const RetryTextWrapper = styled("div")`
-  margin-top: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const RetryTextContainer = styled("div")`
-  display: flex;
-  gap: 3px;
-`;
-
 function OtpComponent() {
   const { successMsg, errorMsg } = toastFunctions();
   const navigate = useNavigate();
