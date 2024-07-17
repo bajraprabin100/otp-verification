@@ -5,6 +5,7 @@ import {useAuth} from "@/app/core";
 import {Box, styled, Typography} from "@mui/material";
 import FormButton from "@/app/shared/components/design-system/button.component";
 import {rootRoute} from "@/app/pages/root.lazy";
+import { ROUTE_PATHS } from "@/app/shared/constants";
 
 export const SectionContainer = styled("section")(() => ({
   minHeight: "70vh",
@@ -41,7 +42,7 @@ const SuccessPage = () => {
 };
 export const successRoutes = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/success",
+  path: ROUTE_PATHS.success,
   component: SuccessPage
 })
 export default SuccessPage;

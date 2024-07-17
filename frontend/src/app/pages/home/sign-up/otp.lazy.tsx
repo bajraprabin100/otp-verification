@@ -3,13 +3,15 @@ import LoginSignUpLayout from "src/app/shared/components/wrappers/login-sign-up-
 import LoginSignUpSlider from "src/app/shared/components/layouts/login-sign-up-slider/login-sign-up-slider";
 import SignUpWrapperComponent from "@/app/pages/home/sign-up/components/otp-wrapper.component";
 import { rootRoute } from "@/app/pages/root.lazy";
+import { ROUTE_PATHS } from "@/app/shared/constants";
+import OtpWrapperComponent from "@/app/pages/home/sign-up/components/otp-wrapper.component";
 
-function SignUp() {
+function Otp() {
   return (
     <>
       <LoginSignUpLayout
         leftElement={<LoginSignUpSlider />}
-        rightElement={<SignUpWrapperComponent />}
+        rightElement={<OtpWrapperComponent />}
       />
     </>
   );
@@ -23,8 +25,8 @@ type OtpLazyParams = {
 };
 export const signUpRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/",
-  component: SignUp,
+  path: ROUTE_PATHS.landing,
+  component: Otp,
   validateSearch: (search: Record<string, string>): OtpLazyParams => {
     return {};
   },
