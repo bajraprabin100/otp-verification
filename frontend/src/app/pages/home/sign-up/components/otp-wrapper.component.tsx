@@ -1,5 +1,5 @@
 import { styled } from "@mui/material/styles";
-import OtpComponent from "@/app/pages/home/sign-up/components/otp-component";
+import OtpComponent from "@/app/pages/home/sign-up/components/otp-form";
 
 export const OtpWrapper = styled("div")(() => ({
   display: "flex",
