@@ -1,6 +1,6 @@
 import {createRoute, redirect} from "@tanstack/react-router";
 import { rootRoute } from "@/app/pages/root.lazy";
-import { signUpRoute } from "@/app/pages/home/sign-up/otp.lazy";
+import { signUpRoute } from "@/app/pages/home/otp.lazy";
 import ErrorPage, {errorRoutes} from "@/app/pages/error/error.page";
 import PageNotFound from "@/app/pages/error/page-not-found.page";
 import SuccessPage, { successRoutes } from "./app/pages/success";

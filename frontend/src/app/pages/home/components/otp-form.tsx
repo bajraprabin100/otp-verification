@@ -9,14 +9,14 @@ import { TOAST_CONTENT } from "@/app/shared/content/toast.content";
 import { ErrorResponse } from "@/app/core/services/type/request-response.type";
 import { OtpSubmit } from "@/app/shared/types";
 import { validateOtp } from "@/app/core/services/api/auth/auth.service";
-import { otpValidation } from "@/app/pages/home/sign-up/components/validation";
+import { otpValidation } from "@/app/pages/home/components/validation";
 import { OtpInput } from "@/app/shared/components/design-system/otp.component";
 import FormButton from "@/app/shared/components/design-system/button.component";
 import toastFunctions from "@/app/shared/components/toast/toast";
-import "@/app/pages/home/sign-up/components/otp-form.scss";
+import "@/app/pages/home/components/otp-form.scss";
 import { ROUTE_PATHS } from "@/app/shared/constants";
 
-function OtpComponent() {
+function OtpForm() {
   const { successMsg, errorMsg } = toastFunctions();
   const navigate = useNavigate();
   const [otp, setOtp] = useState<string>("");
@@ -109,4 +109,4 @@ function OtpComponent() {
   );
 }
 
-export default OtpComponent;
+export default OtpForm;
