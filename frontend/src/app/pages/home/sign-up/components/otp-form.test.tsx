@@ -1,11 +1,10 @@
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import '@testing-library/jest-dom';
 import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ToastContainer } from 'react-toastify';
-import { validateOtp } from "@/app/core/services/api/auth/auth.service";
-import OtpComponent from "@/app/pages/home/sign-up/components/otp-component";
+import OtpComponent from "@/app/pages/home/sign-up/components/otp-form";
 
 jest.mock("@/app/core/services/api/auth/auth.service", () => ({
   validateOtp: jest.fn(),

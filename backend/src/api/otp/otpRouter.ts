@@ -5,6 +5,7 @@ import { createApiResponse } from '@/api-docs/openAPIResponseBuilders';
 import { handleServiceResponse, validateRequest } from '@/common/utils/httpHandlers';
 import { OtpSchema, ValidateOtpSchema } from './otpModel';
 import { otpService } from './otpService';
+import { otpController } from './otpController';
 
 export const otpRegistry = new OpenAPIRegistry();
 
@@ -30,10 +31,7 @@ export const otpRouter: Router = (() => {
     responses: createApiResponse(OtpSchema, 'Success'),
   });
 
-  router.post('/validate', validateRequest(ValidateOtpSchema), async (req: Request, res: Response) => {
-    const serviceResponse = await otpService.validateOtp();
-    handleServiceResponse(serviceResponse, res);
-  });
+  router.post('/validate', validateRequest(ValidateOtpSchema), otpController.validateOtp);
 
   return router;
 })();
